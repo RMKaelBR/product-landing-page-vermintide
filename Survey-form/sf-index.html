@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Promote a Minion</title>
+        <link href="sf-style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src=".\sf-index.js" async></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <a href="https://www.vermintide.com/" target="_blank"><img src="..\media\header_vt2-logo.png" class="header-image" id="header-image2"></a>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="..\index.html#home" class="nav-link">About</a></li>
+                    <li><a href="..\index.html#media" class="nav-link">Media</a></li>
+                    <li><a href="..\index.html#links" class="nav-link">Links</a></li>
+                </ul>
+            </nav>
+            <a href="https://www.fatshark.se/" target="_blank"><img src="..\media\fatshark-logo_Use+on+Dark+Backgrounds.png" class="header-image" id="header-image1"></a> 
+        </div>
+
+        <img src="images\Chaos_Lord_Bodvarr_Ribspreader.webp" class="page-hosts" id="host-bodvarr">
+        <img src="images\Skaven_Lord_Rasknitt.webp" class="page-hosts" id="host-rasknitt">
+
+        <div class="main">
+            <h1 id="title">Promote a minion and fulfill their dream to be a champion today!</h1>    <!-- US1 -->
+            <p><a href="https://vermintide2.fandom.com/wiki/B%C3%B6dvarr_Ribspreader" target="_blank" class="event-host-link">Bödvarr Ribspreader</a> and 
+                <a href="https://vermintide2.fandom.com/wiki/Rasknitt" target="_blank" class="event-host-link">Rasknitt</a> need your help in promoting a minion. 
+                Fill up the form and send in your vote!</p> <!-- US2 -->
+            <hr>
+            <form action="sf-formsubmit.html" method="GET" id="survey-form"> <!-- US3 -->
+                <label for="name" id="name-label">Name:</label> <!-- US10a -->
+                <input type="text" name="name" id="name" size="30" placeholder="Type your name here.">  <!-- US4, US11 -->
+                <br>
+                <br>
+
+                <label for="email" id="email-label">E-mail:</label>  <!-- US10b -->
+                <input type="email" name="email" id="email" size="30" placeholder="Type your e-mail address here">    <!-- US5, US11 -->
+                <br>
+                <br>
+                
+                <label for="number" id="number-label">Age:</label>    <!-- US10c -->
+                <input type="number" name="number" id="number" min="17" max="150" size="30" placeholder="17+ only"> <!-- US7, US8, US9, US11 -->
+                <br>
+                <br>
+
+                <label for="dropdown" id="dropdown-label">Faction:</label>
+                <select name="faction" id="dropdown">   <!-- US12 -->
+                    <option value="" hidden selected>Choose one.</option>
+                    <option value="chaos">Warriors of Chaos</option>
+                    <option value="Beastmen">Beastmen</option>
+                    <option value="skaven">Skaven</option>
+                </select>
+
+                <br>
+                <br>
+
+                <p>Unit Type:</p>
+                <input type="radio" id="infantry" name="unit-type" value="Infantry">
+                <label for="infantry" class="radio-label">Infantry</label>  <!-- US13 -->
+                <br>
+
+                <input type="radio" id="elite" name="unit-type" value="Elite">
+                <label for="elite" class="radio-label">Elite</label>    <!-- US13 -->
+                <br>
+
+                <input type="radio" id="special" name="unit-type" value="Special">
+                <label for="special" class="radio-label">Special</label>    <!-- US13 -->
+                <br>
+
+                <input type="radio" id="monster" name="unit-type" value="Monster">
+                <label for="monster" class="radio-label">Monster</label>    <!-- US13 -->
+
+                <p>Unit:</p>
+                <input type="checkbox" id="skavenslave" name="unit" value="Skavenslave">
+                <label for="skavenslave" class="checkbox-label">Skavenslave</label> <!-- US14 -->
+                <br>
+
+                <input type="checkbox" id="clanrat" name="unit" value="Clanrat">
+                <label for="clanrat" class="checkbox-label">Clanrat</label> <!-- US14 -->
+                <br>
+
+                <input type="checkbox" id="stormvermin" name="unit" value="Stormvermin">
+                <label for="stormvermin" class="checkbox-label">Stormvermin</label> <!-- US14 -->
+                <br>
+
+                <input type="checkbox" id="plaguemonk" name="unit" value="Plaguemonk">
+                <label for="plaguemonk" class="checkbox-label">Plague Monk</label>  <!-- US14 -->
+
+                <p>Comments:</p>
+                <textarea id="commentbox" name="commentbox" rows="5" cols="50"></textarea>  <!-- US15 -->
+                <br>
+                <br>
+                
+                <input type="submit" value="Submit">    <!-- US16 -->
+            </form>
+            
+            
+        </div>
+        
+        <!-- <script src="script.js"></script>
+        <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  -->
+    </body>
+
+</html>

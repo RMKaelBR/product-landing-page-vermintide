@@ -1,0 +1,209 @@
+* {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color:rgb(10, 10, 10);
+    height: 100%;
+}
+
+h1 {
+    color: rgb(214, 157, 0);
+}
+
+h2 {
+    color: rgb(214, 157, 0);
+    text-align: center;
+}
+
+.header {
+    position:fixed;
+    left: 0px;
+    top: 0px;
+    width: calc(100vmax);
+    height: 8%;
+    min-height: 2em;
+    background-color: rgb(20, 20, 20);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    opacity: 95%;
+}
+
+nav {
+    display: flex;
+    justify-content:space-evenly;
+    width: 7em;
+}
+
+ul {  /* This is for formatting the unordered list used for the nav. */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {    /* This formats the list to be horizontal. Changes how it looks too. Kind of. */
+    display: inline;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    color: white;
+}   
+
+.nav-link:hover {
+    color: rgb(151, 151, 151);
+}
+
+.header-image {
+    height: 2.2em;
+    max-height: 8%;
+}
+
+.main {
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2em;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#email-label {
+    color: rgb(214, 157, 0);
+}
+
+/* #email:not(:focus) {
+    color: rgb(185, 185, 185);
+}
+
+#email:focus {
+    color: auto;
+} */
+/* What a waste of time; these two act just as a placeholder attribute of the input element would. */
+
+input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+input:hover {
+    color: blue;
+    font-weight: bold;
+    background-color: rgb(214, 157, 0);
+}
+
+#characters {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    max-width: calc(98vmax);
+    overflow: hidden;
+}
+
+#characters-response1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: none;
+}
+
+#scores {
+    position: relative;
+    bottom:50px;
+}
+
+.media-video {
+    justify-content: center;
+    width: calc(48vmax);
+    height: calc(27vmax);
+}
+
+#video {   
+    width: 100%;
+    height: 100%;
+}
+
+.media-photos {
+    display: flex;
+    justify-content: center;
+    max-width: calc(100vmax);
+    flex-wrap: wrap;
+}
+
+.screenshots {
+    max-width: calc(32vmax);
+    padding: .25em;
+}
+
+.links {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.links-logos {
+    height: 2em;
+    max-width: fit-content;
+    padding: .25em;
+}
+
+@media only screen and (max-width: 414px) {
+    .header {
+        width: 100%;
+        height: 6%;
+        min-height: 1em;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .header-image {
+        height: 1.5em;
+        max-height: 6%;
+    }
+
+    #characters {
+        display: none;
+    }
+
+    #characters-response1 {
+        display: inline;
+        width: calc(45vmax);
+    }
+
+    .media-video {
+        justify-content: center;
+        width: calc(45vmax);
+        height: calc(25vmax);        
+    }
+
+    .links {
+        width: calc(45vmax);
+    }
+}
